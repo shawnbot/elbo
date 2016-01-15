@@ -4,7 +4,10 @@
   "description": "my fancy HTML custom element",
   "main": "src/element.js",
   "scripts": {
-    "test": "zuul --local 8080 -- test/element.js"
+    "build": "webpack",
+    "test": "zuul --local 8080 -- test/*.js",
+    "test-cloud": "zuul -- test/*.js",
+    "watch": "webpack --watch"
   },
   "repository": {
     "type": "git",
