@@ -1,0 +1,32 @@
+{
+  "name": "custom-element",
+  "version": "1.0.0",
+  "description": "my fancy HTML custom element",
+  "main": "src/element.js",
+  "scripts": {
+    "test": "zuul --local 8080 -- test/element.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "custom-event": "^1.0.0",
+    "document-register-element": "^0.5.3",
+    "dom-delegate": "^2.0.3",
+    "weakmap": "0.0.6"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.11",
+    "zuul": "^3.9.0"
+  }
+}
