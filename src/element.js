@@ -22,6 +22,11 @@ var property = require('./property');
  * myMethod: {value: function() {
  * }}
  *
+ * Otherwise, you can attach methods directly to the `proto` object below:
+ *
+ * proto.myMethod = function() {
+ * };
+ *
  * You can declare property accessors with getters and setters like so:
  *
  * property: {
@@ -75,8 +80,14 @@ proto.createdCallback = function() {
  */
 proto.attachedCallback = function() {
   var delegate = new Delegate(this);
-  delegate.on('click', 'button', onClick);
   privates.set(this, 'delegate', delegate);
+  /**
+   * Add your delegated event listeners here, e.g.
+   *
+   * delegate.on('click', 'button', onButtonClick);
+   *
+   * These will be remove automatically in the detachedCallback.
+   */
 };
 
 /**
