@@ -2,16 +2,13 @@ var webpack = require('webpack');
 
 var config = {
   entry: {
-    'custom-element': './src/element.js'
+    'elbo': './lib/bundle.js'
   },
 
   output: {
     path: './build',
     filename: '[name].js'
   },
-
-  // this is the fastest of the source map options
-  devtool: 'eval',
 
   plugins: []
 };

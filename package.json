@@ -1,13 +1,13 @@
 {
-  "name": "custom-element",
+  "name": "elbo",
   "version": "1.0.0",
-  "description": "my fancy HTML custom element",
-  "main": "src/element.js",
+  "description": "a custom element boilerplate for the rest of us",
+  "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "test": "zuul --local 8080 -- test/*.js",
-    "test-cloud": "zuul -- test/*.js",
-    "watch": "webpack --watch"
+    "watch": "webpack --watch",
+    "build-production": "NODE_ENV=production npm run build",
+    "watch-production": "NODE_ENV=production npm run watch"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,9 @@
     "custom-event": "^1.0.0",
     "document-register-element": "^0.5.3",
     "dom-delegate": "^2.0.3",
-    "weakmap": "0.0.6"
+    "privates": "^1.0.1",
+    "weakmap": "0.0.6",
+    "xsor": "^0.1.0"
   },
   "devDependencies": {
     "webpack": "^1.12.11",
