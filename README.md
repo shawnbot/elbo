@@ -27,3 +27,5 @@ elbo.register('foo-bar', {
   }
 });
 ```
+
+[custom element]: http://www.html5rocks.com/en/tutorials/webcomponents/customelements/
