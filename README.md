@@ -1,6 +1,6 @@
 # elbo
 
-A tiny, friendly HTML [custom **el**ement] **bo**ilerplate:
+A tiny, friendly HTML [custom **el**ement][custom element] **bo**ilerplate:
 
 
 ```html
