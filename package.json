@@ -7,7 +7,8 @@
     "build": "webpack",
     "watch": "webpack --watch",
     "build-production": "NODE_ENV=production npm run build",
-    "watch-production": "NODE_ENV=production npm run watch"
+    "watch-production": "NODE_ENV=production npm run watch",
+    "test": "zuul -- test"
   },
   "repository": {
     "type": "git",
